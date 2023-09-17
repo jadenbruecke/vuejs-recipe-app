@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col p-8">
-    <h1 class="text-4xl font-bold mb-4">Recipes Starting With {{ route.params.letter || 'Letter'}}</h1>
+    <h1 class="text-4xl font-bold mb-4">Recipes By Letter {{ route.params.letter }}</h1>
     <div class="flex flex-wrap justify-center gap-2 mt-2">
       <router-link
         :to="{ name: 'byLetter', params: { letter } }"
